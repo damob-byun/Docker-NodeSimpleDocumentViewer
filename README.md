@@ -2,10 +2,18 @@
 
 from [NodeSimpleDocumentViewer](https://github.com/always-awaken/NodeSimpleDocumentViewer)
 
+[docker hub](https://hub.docker.com/r/dksqkdahs/node-simple-document-viewer-docker)
+
 <b>Pull</b>
 
 ```bash
 $ docker pull dksqkdahs/node-simple-document-viewer-docker
+```
+
+## Build
+
+```bash
+$ docker build -t node-simple-document-viewer-docker
 ```
 
 ## Run - example

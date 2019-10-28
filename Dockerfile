@@ -12,7 +12,7 @@ RUN set -e && \
     pypy
 RUN pip install --pre pyhwp
 RUN git clone https://github.com/always-awaken/NodeSimpleDocumentViewer.git document_viewer
-#RUN rm -rf /var/lib/apt/lists/*
+RUN rm -rf /var/lib/apt/lists/*
 
 WORKDIR /document_viewer
 
@@ -27,4 +27,4 @@ ENV UPLOAD_MAX_SIZE 50
 
 EXPOSE 8080
 
-ENTRYPOINT npm start
+ENTRYPOINT git pull && npm start
